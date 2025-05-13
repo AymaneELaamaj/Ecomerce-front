@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './App.css'
 import Navigation from './Component/Navigation/Navigation'
+import HeroSection from './Component/Herosection/HeroSection';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,8 @@ function App() {
   return (
    <div className='App'>
     <Navigation/>
+    <HeroSection/>
+
 
    </div>
   )
