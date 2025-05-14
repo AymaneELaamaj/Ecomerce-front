@@ -6,14 +6,19 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import './App.css'
 import Navigation from './Component/Navigation/Navigation'
 import HeroSection from './Component/Herosection/HeroSection';
-
+import FeaturedProducts from './Component/FeaturedProducts/FeaturedProducts';
+import Footer from './Component/Footer/Footer';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
    <div className='App'>
     <Navigation/>
-    <HeroSection/>
+    <main className="flex-grow-1">
+        <HeroSection />
+        <FeaturedProducts />
+      </main>
+      <Footer />
 
 
    </div>
